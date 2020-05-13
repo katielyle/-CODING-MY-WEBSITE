@@ -1,0 +1,92 @@
+.header {
+    padding:80px; /* some padding */ 
+    text-align: center; /* this will centre the text onn the page */ 
+    background-color: rgb(250, 236, 248);
+    color: rgb(4, 14, 13);
+}  
+
+/* to increase the font size of the <h1> element */
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Styling the top navigation bar! */ 
+.navbar {
+    overflow: hidden; /* Hide overflow */ 
+    background-color: rgb(255, 255, 255); 
+}
+
+/* Style the navigation bar links */ 
+.navbar a { 
+    float: left; /* Make sure that the links stay side-by-side */ 
+    display: block; /* Change the display to block for responsive reasons */ 
+    color: black; /* colour of the text */ 
+    text-align: center; /*Aligning the text to the center */ 
+    padding: 14px 20px; /* Add some padding */ 
+    text-decoration: none; /* remove the underlining */ 
+}
+
+/* Right-aligned link */ 
+.navbar a.right {
+    float: right; /* Float a link to the right */ 
+}
+
+/* Change colour on hover/mouse-over */ 
+.navbar a:hover {
+    background-color: rgb(230, 247, 239); /* peach background colour*/ 
+    color: black; /* Black text color */ 
+}
+
+/* Ensure proper sizing */ 
+ * {
+     box-sizing: border-box;
+}
+
+/* Column container */ 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Create two unequal columns that sit next to each other 
+first sidebar or left column */ 
+.side {
+    flex: 30%; /* set the width of the side bar */ 
+    background-color: cornsilk;
+    padding: 20px;
+
+}
+
+/* Main column */ 
+.main { 
+    flex: 70%;
+    background-color: peachpuff; 
+    padding: 20px; 
+}
+
+/* Responisve layout - this section will ensure that my website looks okay 
+on different devices! 
+
+Starting with when the screen is less than 700px wide, making two columns stack 
+on each other */ 
+@media screen and (max-width: 700px) {
+    .row {
+    flex-direction: column;
+    }
+}
+
+/* This will take effect when it is less than 400px wide, making the 
+navigation links stack */ 
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 20px;
+    text-align: center; 
+    background: rgb(255, 254, 254);
+}

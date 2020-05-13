@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+    <head>
+        <title>Katie Lyle</title>
+
+
+        <link rel="icon" 
+        type="image/png" 
+        href="Images /icon.png">
+         
+    
+        <link href="CSS/Homepage.css" rel="stylesheet" type="text/css">
+
+        <link href='https://fonts.googleapis.com/css?family=Bentham' rel='stylesheet'>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <meta charset="UTF-8">
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <style>
+            body {
+            font-family: 'Bentham' ;font-size: 16px;
+            }
+        </style>
+    </head>
+</html>
+<div class="header">
+    <h1>Katie Lyle </h1>
+    <p>Second year undergraduate student at Nottingham Trent University</p>
+</div>
+
+<!-- This will be a photo slideshow to demonstrate my work-->
+<section> 
+    <img class="mySlides" src="Images /Untitled-2.jpg" style="width:100%">
+    <img class="mySlides" src="Images /website photo-1.jpg" style="width:100%">
+    <img class="mySlides" src="Images /Untitled-1.png" style="width:100%">  
+</section>
+
+<script>
+    // Slide show javascript - the slide show will change every 4 seconds // 
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+    </script>
+
+<h2>About me</h2>
+
+<div class="row">
+    <div class="side"><br><br><br><br><br><br><br><br>
+        My name is Katie and I am a second year music student<br>
+        at Nottingham Trent University. Alongside uni I have<br>
+        been taking part in Coding For Girls, where I have<br>
+        learnt the basics of how to code my own site. This<br>
+        website is a demonstration of what I have accomplished!<br>
+        This website shows my use of HTML, CSS and JavaScript<br>
+        for the first time. 
+        Included is some work I have done in<br> 
+        and outside of my music degree. 
+     </div>
+    <div id="main" style="width: 285px; height: 500px;">
+         <img src="Images /IMG_0486.jpeg" height="500"/>
+</div>
+</div>
+
+</body> 
+
+<div class="footer">
+    <h6>Katie Louisa Lyle | Nottingham Trent University 2020</h6>
+</div>
+
+</html> 

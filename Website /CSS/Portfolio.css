@@ -1,0 +1,100 @@
+.header {
+    padding:80px; 
+    text-align: center; 
+    background-color: rgb(250, 236, 248);
+    color: rgb(4, 14, 13);
+}  
+
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* This will style my top navigation bar. */ 
+.navbar {
+    overflow: hidden; /* Hide overflow */ 
+    background-color: rgb(255, 255, 255); 
+}
+
+/* Navigation bar */ 
+.navbar a { 
+    float: left; 
+    display: block; 
+    color: black; /* text colour*/ 
+    text-align: center; /*centre text */ 
+    padding: 14px 20px; 
+    text-decoration: none; /* no underline */ 
+}
+
+.navbar a.right {
+    float: right; /* Float a link to the right */ 
+}
+
+/* Change colour on mouse */ 
+.navbar a:hover {
+    background-color: rgb(230, 247, 239); /* peach background colour*/ 
+    color: black; /* Black text color */ 
+}
+
+/*sizing */ 
+ * {
+     box-sizing: border-box;
+}
+
+/*my background */ 
+
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* how my website will look on other devices */ 
+
+@media screen and (max-width: 700px) {
+    .row {
+    flex-direction: column;
+    }
+}
+
+/* when it is less than 400px wide, the 
+navigation links will stack */ 
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+#imagelist {
+    font-size: 0; /* this gets rid of the spacing in between my photos*/
+    width: 1300px; 
+    margin: 0 auto; /* centres the images automatically*/
+}
+
+#imagelist a {
+    margin: 2px; 
+    border: 7px solid transparent;
+    display: inline-block; 
+    border-radius: 10px;
+    opacity: .7; 
+
+    transition: all .3s ease-in;
+}
+
+
+#imagelist a:hover {
+    border-color: peachpuff;
+    opacity: 1; 
+}
+
+#imagelist img {
+    border-radius: 4px;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center; 
+    background: rgb(255, 254, 254);
+}
